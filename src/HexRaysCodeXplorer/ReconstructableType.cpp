@@ -686,10 +686,14 @@ ssize_t hook_idb_events(void *user_data, int notification_code, va_list va) {
 	tid_t tid{};
 	const char *oldname;
 	const char *newname;
-	struc_t *struc;
+	// Patched for IDA 9.0
+	// See https://docs.hex-rays.com/developer-guide/c++-sdk/c++-sdk-porting-guide-ida-9#removed-classes
+	udt_type_data_t *struc;
 	ea_t ea;
 	adiff_t diff;
-	member_t *member;
+	// Patched for IDA 9.0
+	// See https://docs.hex-rays.com/developer-guide/c++-sdk/c++-sdk-porting-guide-ida-9#removed-classes
+	udm_t *member;
 	flags_t flags;
 	const opinfo_t *info;
 	asize_t size;
