@@ -111,9 +111,10 @@ __Compiling__:
 * Build `Release | x64` and `Release x64 | x64` configurations
 
 ***Linux***:
-* cd src/HexRaysCodeXplorer/
-* IDA_DIR=<PATH_TO_IDA> IDA_SDK=<PATH_TO_IDA_SDK> EA64=0 make -f makefile.lnx
-* IDA_DIR=<PATH_TO_IDA> IDA_SDK=<PATH_TO_IDA_SDK> EA64=0 make -f makefile.lnx install
+> @nonetype: USE CMAKE METHOD BELOW FOR LINUX BUILD. THE "MAKE" BUILD OCCURS SYMBOL ERROR IN IDA PLUGIN LOAD.
+* ~cd src/HexRaysCodeXplorer/~
+* ~IDA_DIR=<PATH_TO_IDA> IDA_SDK=<PATH_TO_IDA_SDK> EA64=0 make -f makefile.lnx~
+* ~IDA_DIR=<PATH_TO_IDA> IDA_SDK=<PATH_TO_IDA_SDK> EA64=0 make -f makefile.lnx install~
   
 ***Mac***:
 * cd src/HexRaysCodeXplorer/
